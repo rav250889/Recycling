@@ -1,0 +1,1563 @@
+*
+{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+.default-foto
+{
+	background: url("../img/background/default.jpg");
+	background-size: 100% 100%;
+}
+
+/*ANIMACJA DLA KAŻDEGO SECTION*/
+@keyframes bounceInDown
+{
+	0%, 60%, 75%, 90%, 100%
+	{
+  		-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  	}
+  
+	0%
+	{
+  		opacity: 0;
+  		-webkit-transform: translate3d(0, -3000px, 0);
+  		transform: translate3d(0, -3000px, 0);
+  	}
+  
+	60%
+	{
+	  	opacity: 1;
+	  	-webkit-transform: translate3d(0, 25px, 0);
+	  	transform: translate3d(0, 25px, 0);
+ 	}
+  
+	75%
+	{
+  		-webkit-transform: translate3d(0, -10px, 0);
+  		transform: translate3d(0, -10px, 0);
+  	}
+  
+	90%
+	{
+  		-webkit-transform: translate3d(0, 5px, 0);
+  		transform: translate3d(0, 5px, 0);
+  	}
+  
+	100%
+	{
+  		-webkit-transform: none;
+  		transform: none;
+  	}
+}
+
+/*KONIEC ANIMACJI DLA KAŻDEGO SECTION*/
+/*------------------------------------------------------------------------------------*/
+
+body
+{
+    background-image: linear-gradient(10deg, #020024 100%, #090979 65%, #00d4ff 100%)
+}
+
+/*LOGO*/
+#header-container
+{
+	background-image: linear-gradient(10deg, #020024 100%, #090979 65%, #00d4ff 100%); /*TŁO*/
+}
+
+#logo
+{
+	width: 13%;
+	float: left;
+	margin-top: 7%;
+}
+
+#krisvent
+{
+	margin-top: 5%;
+	width: 50%;
+}
+/*KONIEC LOGO*/
+/*------------------------------------------------------------------------------------*/
+
+/*HAMBURGER MENU*/
+#hamburger_mobile_menu
+{
+	border-top: 1px solid grey;
+	width: 100%;
+	height: 7vh;
+	background-image: linear-gradient(10deg, #020024 100%, #090979 65%, #00d4ff 100%);
+}
+
+#hamburger-menu, #hamburger-menu-after-click
+{
+	width: 13%;
+	margin-top: 1%;
+	position: absolute;
+	background-image: linear-gradient(10deg, #020024 100%, #090979 65%, #00d4ff 100%);
+	padding: 8px;
+}
+
+#hamburger-menu-after-click
+{
+	display: none;
+	height: 6vh;
+}
+/*KONIEC HAMBURGER MENU*/
+/*------------------------------------------------------------------------------------*/
+
+/*MENU MOBILE*/
+#menu-desktop
+{
+    display: none;
+}
+
+#menu-mobile a
+{
+	text-decoration: none;
+	color: white;
+}
+
+#menu-mobile
+{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 78vh;
+	opacity: 0.9;
+	background-image: linear-gradient(10deg, #020024 100%, #090979 65%, #00d4ff 100%);
+}
+
+#menu-mobile li
+{
+	list-style: none;
+
+}
+
+#menu-mobile > li
+{
+	border-bottom: 1px solid darkgreen;
+}
+
+#menu-mobile > li ul li
+{
+	border-top: 1px solid darkred;
+	margin-top: 3%;
+	padding-left: 5%;
+}
+
+#menu-mobile li
+{
+	padding: 2% 0;
+}
+
+#menu-mobile > li
+{		
+	background-image: linear-gradient(10deg, #020024 100%, #090979 65%, #00d4ff 100%);
+
+}
+
+#menu-mobile > li ul
+{
+	background-image: linear-gradient(180deg, #020024 0%, #090979 100%, #00d4ff 00%);
+}
+
+#menu-mobile > li ul a
+{
+	color: white;
+}
+
+#uslugi-mobile, #dokumenty-mobile
+{
+	display: none;
+}
+
+#menu-mobile > li ul li:last-child
+{
+	border-bottom: none;
+}
+/*KONIEC MENU MOBILE*/
+/*------------------------------------------------------------------------------------*/
+
+#skup_odpadow, #obsluga, #posrednictwo, #niszczenie, #outsourcing, #reglanulaty, #contact, #dane-firmy, #company
+{
+    display: none;
+	color: floralwhite;
+	background-color: rgba(2,0,36,0.85);
+	padding: 5%;
+	margin-top: 50%;
+	z-index: -1;
+	font-family: courier, Helvetica, Arial;
+	font-size: 110%;
+}
+
+footer
+{
+	color: floralwhite;
+	background-color: rgb(2,0,36);
+	padding: 1%;
+	font-family: courier, Helvetica, Arial;
+	font-size: 90%;
+	text-align: center;
+}
+
+#backtohome
+{
+	cursor: pointer;
+}
+
+#home-page
+{
+	color: floralwhite;
+	background-color: rgba(2,0,36,0.85);
+	padding: 5%;
+	margin-top: 50%;
+	z-index: -1;
+	font-family: courier, Helvetica, Arial;
+	font-size: 110%;
+	max-height: 130vh;
+	overflow: hidden;
+	position: relative;
+}
+
+#home-page img
+{
+	top: -5.5%;
+	opacity: 0.5;
+	width: 250%;
+	z-index: -1;
+	position: absolute;
+}
+
+#home-page h1
+{
+	color: darkorange;
+	font-style: italic;
+	font-size: 117%;
+	margin-bottom: 10%;
+	text-align: center;
+}
+
+#home-page p
+{
+	line-height: 190%;
+	font-size: 110%;
+	margin-bottom: 10%;
+}
+
+#contact a
+{
+    text-decoration: none;
+    color: floralwhite;
+    font-family: courier, Helvetica, Arial;
+}
+
+#dane-firmy a
+{
+    text-decoration: none;
+    color: floralwhite;
+    font-family: courier, Helvetica, Arial;
+    color: darkorange;
+    font-weight: bold;
+}
+
+#skup_odpadow img
+{
+	width: 40%;
+    height: 25vh;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px 1px darkorange;
+	margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+	border: 1px dotted brown;
+}
+
+#skup_odpadow .elem2, #skup_odpadow .elem2 * {
+	box-sizing: border-box;
+}
+
+#skup_odpadow .elem2 {
+	display: inline-block;
+	font-size: 0;
+	width: 40%;
+	border-bottom: none;
+	height: auto;
+	background-clip: padding-box;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#skup_odpadow .elem2 > span {
+	display: block;
+	cursor: pointer;
+	height: 25vh;
+	background-size: cover;	
+	background-position: center center;
+    border-radius: 5px;
+	box-shadow: 1px 1px 10px 1px darkorange;
+	border: 1px dotted brown;
+}
+
+#skup_odpadow .elem2 > span:hover
+{
+    opacity: 0.6;
+    transition: 0.1s;
+}
+
+#obsluga
+{
+	position: relative;
+}
+
+#obsluga img:first-child
+{
+	opacity: 0.8;
+	width: 110%;
+	margin-left: -6%;
+}
+
+#pdf
+{
+	width: 100%;
+	margin-top: 5%;
+	border-top: 1px solid darkorange;
+	border-right: 1px solid darkorange;
+	border-bottom: 1px solid darkorange;
+	border-radius: 5px;
+	padding: 5%;
+	margin-left: -8%;
+}
+
+#pdf img
+{
+	width: 11%;
+	opacity: 0.8;
+	float: left;
+	margin-left: 3%
+}
+
+#pdf p
+{
+    margin-left: 1%;
+	display: inline-flex;
+	margin-bottom: 3%;
+	font-size:75%;
+	margin-top: 2%;
+}
+
+#niszczenie img:first-child
+{
+	width: 80%;
+	margin-left: -8%;
+	opacity: 0.6;
+	margin-bottom: 5%;
+}
+
+#niszczenie img:last-child
+{
+	width: 80%;
+	opacity: 0.6;
+	margin-left: -8%;
+	margin-top: 5%;
+}
+
+#lista
+{
+	border-top: 1px double orange;
+	border-bottom: 1px double orange;
+	border-right: 1px double orange;
+	border-radius: 5px;
+	width: 100%;
+	margin-left: -7%;
+	margin-top: 6%;
+	margin-bottom: 6%;
+}
+
+#outsourcing ul
+{
+	margin-left: 10%;
+	margin-top: 6%;
+	margin-bottom: 6%;
+	list-style-type: circle;
+}
+
+#outsourcing ul li
+{
+	padding: 4%;
+
+}
+
+#reglanulaty .elem, #reglanulaty .elem * {
+	box-sizing: border-box;
+}
+
+#reglanulaty .elem {
+	display: inline-block;
+	font-size: 0;
+	width: 45%;
+	border-bottom: none;
+	height: auto;
+	background-clip: padding-box;
+}
+
+#reglanulaty .elem > span {
+	display: block;
+	cursor: pointer;
+	height: 10vh;
+	background-size: cover;	
+	background-position: center center;
+    box-shadow: 1px 1px 10px 1px darkorange;
+    border-radius: 5px;
+    border: 1px dotted brown;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    transition: 0.1s;
+}
+
+#reglanulaty .elem > span:hover
+{
+    opacity: 0.6;
+    transition: 0.1s;
+}
+
+#map iframe
+{
+	width: 100%;
+	height: 50vh;
+	box-shadow: 1px 3px 10px 1px;
+	border: none;
+}
+
+#contact
+{
+	display: none;
+    font-size: 85%;
+}
+
+#contact #table_container
+{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#contact #personal_data
+{
+	border-collapse: collapse;
+	margin: 0 auto;
+
+}
+
+#contact #personal_data td:first-child
+{
+    color: darkorange;
+    text-align: right;
+    font-weight: bold;
+}
+
+#contact #personal_data tr:last-child td:last-child a
+{
+   line-height: 5vh;
+}
+
+#contact #personal_data td
+{
+	border-left: 0.5px solid grey;
+	border-bottom: 0.5px solid grey;
+	padding: 10px 5px;
+}
+
+#contact #personal_data td:first-child
+{
+	border-left: none;
+}
+
+#contact #personal_data tr:last-child td
+{
+	border-bottom: none;	
+}
+
+#dane-firmy #table_container
+{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#dane-firmy #personal_data
+{
+	border-collapse: collapse;
+
+}
+
+#dane-firmy #personal_data td:first-child
+{
+    color: darkorange;
+    text-align: right;
+    font-weight: bold;
+}
+
+#dane-firmy #personal_data td
+{
+	border-left: 0.5px solid grey;
+	border-bottom: 0.5px solid grey;
+	padding: 5px;
+}
+
+#dane-firmy #personal_data td:first-child
+{
+	border-left: none;
+}
+
+#dane-firmy #personal_data tr:last-child td
+{
+	border-bottom: none;	
+}
+
+#dane-firmy-center
+{
+	margin: 0 auto;
+	width: 80%;
+}
+
+#dane-firmy img
+{
+    transition: 0.5s;
+    width: 100%;
+}
+
+#dane-firmy img:first-child
+{
+    margin-top: -1%;
+}
+
+#dane-firmy img:last-child
+{
+    border-radius: 5px;
+    margin-bottom: 8%;
+}
+
+#dane-firmy img:hover
+{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.scrolling_photos_container
+{
+	overflow: hidden;
+	width: 800px;
+	display: none;
+	margin: 1% auto;
+	background: white;
+	border-radius: 10px 25px 10px 25px;
+}
+
+.scrolling_photos_container img
+{
+	padding-top: 0.5%;
+	animation: scrolling_photos 40s  infinite;
+}
+
+@keyframes scrolling_photos
+{
+	0%{transform: translateX(800px)}
+	10%{transform: translateX(448px)}
+	20%{transform: translateX(96px)}
+	30%{transform: translateX(-256px)}
+	40%{transform: translateX(-608px)}
+	50%{transform: translateX(-960px)}
+	60%{transform: translateX(-1312px)}
+	70%{transform: translateX(-1664px)}
+	80%{transform: translateX(-2016px)}
+	90%{transform: translateX(-2368px)}
+    100%{transform: translateX(-2720px)}
+	
+	
+}
+
+#company
+{
+    color: floralwhite;
+	background-color: rgba(2,0,36,0.85);
+	padding: 5%;
+	margin-top: 50%;
+	z-index: -1;
+	font-family: courier, Helvetica, Arial;
+	font-size: 110%;
+}
+
+#company p
+{
+	margin-left: 10%;
+	margin-top: 6%;
+	margin-bottom: 6%;
+	list-style-type: circle;
+	padding: 4%;
+}
+
+
+#list
+{
+	border-top: 1px double orange;
+	border-bottom: 1px double orange;
+	border-right: 1px double orange;
+	border-radius: 5px;
+	width: 100%;
+	margin-left: -7%;
+	margin-top: 6%;
+	margin-bottom: 6%;
+}
+
+/*MEDIA QUERIES DLA MENU I LOGO*/
+@media only screen and (min-width: 500px)
+{
+    #logo
+    {
+        width: 10%;
+    }
+
+    #krisvent
+    {
+        width: 40%;
+    }
+    
+    #hamburger-menu, #hamburger-menu-after-click
+    {
+        width: 10%;
+    }
+}
+
+@media only screen and (min-width: 660px)
+{
+    #logo
+    {
+        width: 8%;
+    }
+
+    #krisvent
+    {
+        width: 30%;
+    }
+    
+    #hamburger-menu, #hamburger-menu-after-click
+    {
+        width: 9%;
+    }
+        
+}
+
+@media only screen and (min-width: 810px)
+{
+    #logo
+    {
+        width: 7%;
+    }
+
+    #krisvent
+    {
+        width: 25%;
+    }
+    
+    #hamburger-menu, #hamburger-menu-after-click
+    {
+        width: 7%;
+    }
+    
+    #hamburger_mobile_menu
+    {
+        height: 7vh;
+    }
+}
+
+@media only screen and (min-width: 500px) and (orientation: landscape)
+{
+   #logo
+    {
+        width: 7%;
+    }
+
+    #krisvent
+    {
+        width: 25%;
+    }
+    
+    #hamburger-menu, #hamburger-menu-after-click
+    {
+        width: 7%;
+    }
+	
+	#hamburger-menu-after-click
+	{
+		height: 10vh;
+	}
+    
+    #hamburger_mobile_menu
+    {
+        height: 12vh;
+    }
+}
+
+@media only screen and (min-width: 790px) and (orientation: landscape)
+{
+    #hamburger_mobile_menu
+    {
+        height: 15vh;
+    }
+}
+
+@media only screen and (min-width: 1280px)
+{
+    #logo
+	{
+		width: 5%;
+		margin-top: 1%;
+	}
+	
+	#krisvent
+	{
+		width: 15%;
+		margin-top: 1%;
+	}
+    
+    #menu-mobile, #hamburger-menu, #hamburger-menu-after-click, #hamburger_mobile_menu, #menu-mobile > li
+    {
+        display: none;
+		background: none;
+    }
+    
+    #menu-desktop
+    {
+        display: block;
+    }
+        
+    #menu-desktop
+	{
+		display: block;
+		opacity: 1;
+		height: auto;
+	}
+        	
+	#menu-desktop a
+	{
+		text-decoration: none;
+		color: #FFF;
+		display: block; 
+	}
+       
+	#menu-desktop li
+	{
+		list-style: none;
+	}
+
+	#menu-desktop > li
+	{
+		float: left;
+		background-image: linear-gradient(180deg, #020024 0%, #090979 100%, #00d4ff 00%);
+		border-bottom: none;
+		padding: 0;
+	}
+	
+	#menu-desktop > li:last-child
+	{
+		border-bottom-right-radius: 5px; 
+	}
+
+	#menu-desktop > li > a
+	{
+		padding: 15px 70px;;
+		font-family: Stoke, sans;
+		border-bottom: 1px dashed grey;
+		border-bottom-right-radius: 5px;
+	}
+
+	#menu-desktop > li > a:hover
+	{
+		background-image: linear-gradient(10deg, #020024 100%, #090979 65%, #00d4ff 100%);
+        color: darkgrey;
+	}
+	
+	#menu-desktop > li ul li
+	{
+		border-top: none;
+		padding-left: 0;
+		margin-top: 0;
+	}
+
+	#menu-desktop > li ul li a
+	{
+		padding: 10px 25px;
+		border-bottom: 1px dashed grey;
+	}
+
+	#menu-desktop > li ul
+	{
+		position: absolute;
+		background-image: linear-gradient(1deg, #020024 0%, #090979 100%, #00d4ff 00%);
+		display: none;
+		z-index: 1;
+	}
+
+	#menu-desktop > li ul li:last-child a
+	{
+		border-bottom: none;
+	}
+
+	#menu-desktop > li ul li a:hover
+	{
+		background-image: linear-gradient(10deg, #020024 100%, #090979 65%, #00d4ff 100%);
+        color: darkgrey;
+	}
+}
+/*KONIEC MEDIA QUERIES DLA MENU I LOGO*/
+/*------------------------------------------------------------------------------------*/
+
+/*MEDIA QUERIES DLA SECTION*/
+@media only screen and (min-width: 500px)
+{
+    #contact
+    {
+        font-size: 110%;
+    }
+    
+    #dane-firmy img
+    {
+        width: 70%;
+    }
+    
+    #home-page h1
+	{
+		font-size: 180%;
+	}
+	
+	#home-page p
+	{
+		font-size: 150%;
+	}
+}
+@media only screen and (min-width: 500px) and (orientation: landscape)
+{
+    #home-page h1
+	{
+		font-size: 110%;
+	}
+	
+	#home-page p
+	{
+		font-size: 100%;
+	}
+           
+    #skup_odpadow p
+    {
+        font-size: 110%;
+    }
+    
+    #home-page, #skup_odpadow, #obsluga, #posrednictwo, #niszczenie, #outsourcing, #reglanulaty, #contact, #dane-firmy, #company
+    {
+        margin-top: 20%;
+    }
+    
+    #contact
+    {
+        font-size: 110%;
+    }
+	
+	#dane-firmy-center
+	{
+		margin: 0 auto;
+		width: 50%;
+	}
+
+    #dane-firmy img
+    {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (orientation: portrait)
+{
+    #home-page, #skup_odpadow, #obsluga, #posrednictwo, #niszczenie, #outsourcing, #reglanulaty, #contact, #dane-firmy, #company
+    {
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (min-width: 600px)
+{
+   
+    #skup_odpadow p
+    {
+        font-size: 130%;
+    }
+	
+	.scrolling_photos_container
+	{
+		display: block;
+		margin-bottom: 2%;
+		width: 100%;
+	}
+    
+    #skup_odpadow .elem2 > span {
+        display: block;
+        cursor: pointer;
+        height: 30vh;
+        background-size: cover;	
+        background-position: center center;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px 1px darkorange;
+        border: 1px dotted brown;
+    }
+    
+    #obsluga p
+    {
+        font-size: 130%;
+    }
+    
+    #posrednictwo p
+    {
+        font-size: 130%;
+    }
+    
+    #pdf
+    {
+        width: 70%;
+        padding: 2%;
+    }
+    
+    #pdf p
+    {
+        font-size: 100%;
+    }
+    
+    #niszczenie p
+    {
+        font-size: 130%;
+    }
+    
+    #niszczenie img:first-child
+    {
+        width: 70%;
+        margin-left: -8%;
+        opacity: 0.6;
+        margin-bottom: 5%;
+    }
+
+    #niszczenie img:last-child
+    {
+        width: 70%;
+        opacity: 0.6;
+        margin-left: -8%;
+        margin-top: 5%;
+    }
+    
+    #outsourcing p
+    {
+        font-size: 130%;
+    }
+    
+    #outsourcing ul li
+    {
+        font-size: 120%;
+    }
+    
+    #reglanulaty p
+    {
+        font-size: 130%;
+    }
+    
+    #contact
+    {
+        font-size: 130%;
+    }
+    
+    #dane-firmy
+    {
+        font-size: 130%;
+    }
+	
+	#dane-firmy-center
+	{
+		margin: 0 auto;
+		width: 50%;
+	}
+    
+    #dane-firmy img
+    {
+        width: 100%;
+    }
+	
+	#company
+	{
+		font-size: 130%;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+    #pdf
+    {
+        width: 55%;
+        padding: 2%;
+    }
+    
+    #pdf p
+    {
+        font-size: 100%;
+    }
+    
+    #niszczenie img:first-child
+    {
+        width: 50%;
+        margin-left: -8%;
+        opacity: 0.6;
+        margin-bottom: 5%;
+    }
+
+    #niszczenie img:last-child
+    {
+        width: 50%;
+        opacity: 0.6;
+        margin-left: -8%;
+        margin-top: 5%;
+    }
+    
+    #outsourcing ul li
+    {
+        padding: 3%;
+        font-size: 130%;
+    }
+    
+    #reglanulaty .elem
+    {
+	display: inline-block;
+	font-size: 0;
+	width: 20%;
+	border-bottom: none;
+	height: auto;
+	background-clip: padding-box;
+    }
+
+    #reglanulaty .elem > span
+    {
+        display: block;
+        cursor: pointer;
+        height: 20vh;
+        background-size: cover;	
+        background-position: center center;
+        box-shadow: 1px 1px 10px 1px darkorange;
+        border-radius: 5px;
+        border: 1px dotted brown;
+        margin-left: 10%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        transition: 0.1s;
+    }
+    
+    #dane-firmy img
+    {
+        width: 35%;
+    }
+	
+     #dane-firmy #table_container
+    {
+        float: left;
+        margin-right: 10%;
+    }
+    
+	#dane-firmy-center
+	{
+		margin: 0 auto;
+		width: 80%;
+	}
+	
+    #dane-firmy img
+    {
+        width: 40%;
+        
+    }
+    
+    #dane-firmy img:first-child
+    {
+        margin-top: 3%;
+    }
+    
+    #dane-firmy img:last-child
+    {
+        margin-bottom: 0;
+    }
+	
+	#company
+	{
+		font-size: 150%;
+	}
+	
+	#company
+	{
+		font-size: 150%;
+	}
+	
+	#company p
+	{
+		padding: 2%;
+	}
+}
+
+@media only screen and (min-width: 770px) and (orientation: landscape)
+{
+	#home-page h1
+	{
+		font-size: 150%;
+	}
+	
+	#home-page p
+	{
+		font-size: 120%;
+	}
+	
+	.scrolling_photos_container
+	{
+		display: block;
+		margin-bottom: 2%;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 770px) and (orientation: landscape)
+{
+    #reglanulaty .elem {
+	display: inline-block;
+	font-size: 0;
+	width: 20%;
+	border-bottom: none;
+	height: auto;
+	background-clip: padding-box;
+    }
+
+    #reglanulaty .elem > span {
+        display: block;
+        cursor: pointer;
+        height: 20vh;
+        background-size: cover;	
+        background-position: center center;
+        box-shadow: 1px 1px 10px 1px darkorange;
+        border-radius: 5px;
+        border: 1px dotted brown;
+        margin-left: 10%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        transition: 0.1s;
+    }
+}
+
+@media only screen and (min-width: 928px) and (orientation: portrait)
+{    
+    #skup_odpadow .elem2
+    {
+        display: block;
+        font-size: 0;
+        max-width: 30%;
+
+    }
+
+    #skup_odpadow .elem2 > span {
+
+        height: 20vh;
+
+    }
+    
+    #skup_odpadow p:first-child
+    {
+        float: right;
+        width: 60%;
+        font-size: 150%;
+        margin-top: 5%;
+    }
+    
+    #skup_odpadow p:nth-child(3)
+    {
+        float: right;
+        width: 60%;
+        font-size: 150%;
+        margin-top: -40%;
+    }
+    
+     #skup_odpadow p:nth-child(4)
+    {
+        float: right;
+        width: 60%;
+        font-size: 150%;
+        margin-top: -18%;
+    }
+    
+    #obsluga img:first-child
+	{
+		opacity: 0.8;
+		width: 110%;
+		height: 30vh;
+		margin-left: -6%;
+        position: static;
+        margin-bottom: -5%;
+	}
+	
+	#obsluga p
+	{
+		font-size: 120%;
+		position: absolute;
+		top: 10%;
+		left: 1%;
+		width: 57%;
+	}
+    
+     #niszczenie p
+	{
+		font-size: 130%;
+		width: 75%;
+		float: right;
+		margin-top: 10%;
+	}
+	
+	#niszczenie img:first-child
+	{
+		width: 30%;
+		margin-left: -8%;
+		opacity: 0.6;
+		margin-bottom: 8%;
+	}
+	
+	#niszczenie img:last-child
+	{
+		width: 30%;
+		opacity: 0.6;
+		
+	}
+    
+    #contact
+    {
+        font-size: 150%;
+    }
+    
+    #dane-firmy
+    {
+        font-size: 150%;
+    }
+    
+    #dane-firmy #table_container
+    {
+        float: left;
+        margin-right: 10%;
+    }
+    
+    #dane-firmy img
+    {
+        width: 30%;
+        
+    }
+    
+    #dane-firmy img:first-child
+    {
+        margin-top: 3%;
+    }
+    
+    #dane-firmy img:last-child
+    {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 928px)
+{
+    #obsluga img:first-child
+	{
+		opacity: 0.8;
+		width: 110%;
+		height: 50vh;
+		margin-left: -6%;
+        position: static;
+        margin-bottom: -5%;
+	}
+	
+	#obsluga p
+	{
+		font-size: 120%;
+		position: absolute;
+		top: 10%;
+		left: 1%;
+		width: 57%;
+	}
+    
+    #pdf
+    {
+        width: 45%;
+        padding: 2%;
+    }
+    
+    #pdf p
+    {
+        font-size: 100%;
+    }
+	
+	.scrolling_photos_container
+	{
+		display: block;
+		margin-bottom: 2%;
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 1280px) and (orientation: landscape)
+{
+    nav
+    {
+        margin-bottom: 30%;
+    }
+    
+    #home-page
+	{
+		font-size: 110%;
+		height: 48vh;
+	}
+
+	#home-page img
+	{
+		width: 100%;
+	}
+
+	#home-page h1
+	{
+		text-align: center;
+		font-size: 250%;
+		margin-top: -4%;
+		margin-bottom: 4%;
+	}
+            
+    #skup_odpadow .elem2
+    {
+	   display: block;
+	   max-width: 30%;
+    }
+
+    #skup_odpadow .elem2 > span
+    {
+        height: 40vh;
+    }
+    
+    #skup_odpadow p:first-child
+    {
+        float: right;
+        width: 60%;
+        font-size: 150%;
+        margin-top: 10%;
+    }
+    
+    #skup_odpadow p:nth-child(3)
+    {
+        float: right;
+        width: 60%;
+        font-size: 150%;
+        margin-top: -32%;
+    }
+    
+     #skup_odpadow p:nth-child(4)
+    {
+        float: right;
+        width: 60%;
+        font-size: 150%;
+        margin-top: -18%;
+    }
+        
+    #obsluga img:first-child
+	{
+		opacity: 0.8;
+		width: 110%;
+		height: 55vh;
+		margin-left: -6%;
+        position: static;
+        margin-bottom: -5%;
+	}
+	
+	#obsluga p
+	{
+		font-size: 130%;
+		position: absolute;
+		top: 20%;
+		left: 1%;
+		width: 57%;
+	}
+    
+    #pdf img
+    {
+        margin-left: 8%;
+    }
+    #pdf
+    {
+        width: 30%;
+        padding: 1%;
+    }
+    
+    #pdf p
+    {
+        font-size: 100%;
+    }
+    
+     #niszczenie p
+	{
+		font-size: 150%;
+		width: 75%;
+		float: right;
+		margin-top: 17%;
+	}
+	
+	#niszczenie img:first-child
+	{
+		width: 30%;
+		margin-left: -8%;
+		opacity: 0.6;
+		margin-bottom: 8%;
+	}
+	
+	#niszczenie img:last-child
+	{
+		width: 30%;
+		opacity: 0.6;
+		
+	}
+    
+    #lista
+    {
+        border-top: 1px double orange;
+        border-bottom: 1px double orange;
+        border-right: 1px double orange;
+        border-radius: 5px;
+        width: 80%;
+        margin-left: -7%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    #outsourcing ul
+    {
+        margin-left: 10%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        list-style-type: circle;
+    }
+
+    #outsourcing ul li
+    {
+        padding: 2%;
+
+    }
+    
+    #reglanulaty
+    {
+        height: auto;
+    }
+    
+    #reglanulaty p
+	{
+		font-size: 150%;
+	}
+    
+    #reglanulaty .elem
+    {
+	display: inline-block;
+	font-size: 0;
+	width: 23%;
+	border: 20px solid transparent;
+	border-bottom: none;
+	padding: 10px;
+	height: auto;
+	background-clip: padding-box;
+    }
+    
+    #reglanulaty .elem > span 
+    {
+        display: block;
+        cursor: pointer;
+        height: 50vh;
+        padding-bottom:	70%;
+        background-size: cover;	
+        background-position: center center;
+    }
+    
+    #contact
+    {
+        font-size: 150%;
+    }
+    
+    #contact #personal_data td
+    {
+        padding: 10px 10px;
+    }
+    
+    #dane-firmy
+    {
+        font-size: 150%;
+        height: auto;
+    }
+    
+    #dane-firmy #table_container
+    {
+        float: left;
+        margin-right: 10%;
+    }
+	
+	#dane-firmy-center
+	{
+		margin: 0 auto;
+		width: 50%;
+	}
+    
+    #dane-firmy img
+    {
+        width: 40%;
+        
+    }
+    
+    #dane-firmy img:first-child
+    {
+        margin-top: 3%;
+    }
+    
+    #dane-firmy img:last-child
+    {
+        margin-bottom: 0;
+    }
+	
+	#company
+	{
+		font-size: 150%;
+	}
+		
+	#list
+	{
+		border-top: 1px double orange;
+        border-bottom: 1px double orange;
+        border-right: 1px double orange;
+        border-radius: 5px;
+        width: 55%;
+        margin-left: -7%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+	}
+		
+	#company p
+	{
+		padding: 1%;
+		margin-left: 5%;
+	}
+	
+	.scrolling_photos_container
+	{
+		width: 800px;
+	}
+    
+    #home-page, #skup_odpadow, #obsluga, #posrednictwo, #niszczenie, #outsourcing, #reglanulaty, #contact, #dane-firmy, #company
+    {
+        margin-top: -10%;
+    }
+}
